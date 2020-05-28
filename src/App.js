@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class App extends Component {
-  state = ({
-    name: '',
-    lastname: '',
-  });
+function App() {
+  const [state, setstate] = useState({});
   // get field inputs
   const getInputs = (e) => {
     state[e.target.id] = e.target.value;
@@ -14,7 +11,7 @@ class App extends Component {
   // get form data
   const getFormData = (e) => {
     e.preventDefaut();
-    const allstate = this.state;
+    return state;
   };
 
   return (
