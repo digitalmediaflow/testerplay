@@ -22,7 +22,7 @@ function App() {
           type='text'
           name='name'
           id='name'
-          value={this.state.name}
+          value={state.name}
           onChange={getInputs}
         />
         <label>Last Name</label>
