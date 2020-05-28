@@ -11,7 +11,7 @@ function App() {
   // get form data
   const getFormData = (e) => {
     e.preventDefaut();
-    return state;
+    console.log(state);
   };
 
   return (
